@@ -1,4 +1,4 @@
-package com.procore.wheather
+package com.vodafone.wheather
 
 import org.junit.Test
 

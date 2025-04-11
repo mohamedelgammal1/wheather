@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.procore.wheather"
+    namespace = "com.vodafone.wheather"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.procore.wheather"
+        applicationId = "com.vodafone.wheather"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
