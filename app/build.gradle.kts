@@ -6,6 +6,8 @@ plugins {
 
 }
 
+import java.util.Properties
+
 android {
     namespace = "com.vodafone.weather"
     compileSdk = 35
@@ -21,6 +23,10 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+        buildConfigField("String", "OPEN_WEATHER_API_KEY", "\"${properties.getProperty("OPEN_WEATHER_API_KEY")}\"")
+
     }
 
     buildTypes {
@@ -44,6 +50,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     composeOptions {

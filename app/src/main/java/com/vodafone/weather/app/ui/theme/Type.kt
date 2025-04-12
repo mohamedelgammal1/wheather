@@ -1,4 +1,4 @@
-package com.vodafone.weather.ui.theme
+package com.vodafone.weather.app.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

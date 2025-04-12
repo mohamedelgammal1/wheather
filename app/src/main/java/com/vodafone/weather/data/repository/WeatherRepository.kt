@@ -1,5 +1,6 @@
 package com.vodafone.weather.data.repository
 
+import com.vodafone.weather.BuildConfig
 import com.vodafone.weather.data.local.CityPreference
 import com.vodafone.weather.data.local.CityPreferenceDao
 import com.vodafone.weather.data.model.CurrentWeather
@@ -14,7 +15,7 @@ class WeatherRepository @Inject constructor(
     private val weatherApi: WeatherApi,
     private val cityPreferenceDao: CityPreferenceDao
 ) {
-    private val apiKey = "YOUR_API_KEY" // In a real app, store this securely
+    private val apiKey = BuildConfig.OPEN_WEATHER_API_KEY
 
     suspend fun getCurrentWeather(cityName: String): Flow<Result<CurrentWeather>> = flow {
         try {
