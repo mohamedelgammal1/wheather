@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.vodafone.weather"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.vodafone.weather"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -65,6 +65,7 @@ dependencies {
     implementation("androidx.room:room-common:2.6.1")
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation(project(":weatherutils"))
     ksp("androidx.room:room-compiler:2.6.1")
 
     // Compose
