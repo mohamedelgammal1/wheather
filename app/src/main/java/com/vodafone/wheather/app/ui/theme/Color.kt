@@ -1,4 +1,4 @@
-package com.procore.wheather.ui.theme
+package com.vodafone.weather.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

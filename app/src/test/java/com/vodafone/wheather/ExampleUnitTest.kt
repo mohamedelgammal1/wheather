@@ -1,4 +1,4 @@
-package com.vodafone.wheather
+package com.vodafone.weather
 
 import org.junit.Test
 
