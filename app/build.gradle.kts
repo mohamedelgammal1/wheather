@@ -75,6 +75,7 @@ dependencies {
     implementation(project(":weatherutils"))
     ksp("androidx.room:room-compiler:2.6.1")
 
+
     // Compose
     val composeBom = platform("androidx.compose:compose-bom:2023.10.01")
     implementation(composeBom)
@@ -112,5 +113,7 @@ dependencies {
     testImplementation("org.mockito:mockito-core:5.11.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
 }
 
