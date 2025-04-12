@@ -1,4 +1,4 @@
-package com.vodafone.wheather.library.weatherutils
+package com.vodafone.weatherutils
 enum class WeatherCondition {
     SUNNY, CLOUDY, RAINY, SNOWY, STORMY, WINDY, FOGGY, UNKNOWN
 }

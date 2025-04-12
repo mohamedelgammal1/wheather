@@ -1,4 +1,4 @@
-package com.vodafone.wheather.library.weatherutils
+package com.vodafone.weatherutils
 
 import java.text.SimpleDateFormat
 import java.util.*
